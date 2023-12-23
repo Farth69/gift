@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Christmas Surprise</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Times New Roman', serif;
+            background-color: #135200; /* Dark green background */
+            color: white;
+        }
+
+        h1 {
+            color: #ff0000; /* Red color for the text */
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 15px;
+            max-width: 80%;
+            height: auto;
+            border: 5px solid white; /* White border for the image */
+        }
+
+        .container {
+            background-color: #ffffffa0; /* Semi-transparent white background */
+            display: inline-block;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding some shadow for depth */
+        }
+
+        button {
+            background-color: #ff0000; /* Red button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+        }
+
+        #loveReason {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #135200; /* Dark green text */
+        }
+    </style>
+    <script>
+        function showLoveReason() {
+            var reasons = [
+                "Your smile is so cute",
+                "Your eyes are my favorite thing to look at",
+                "You make me so happy",
+                "We have so much fun together",
+                "You're my bestfriend",
+		"Our cuddles",
+		"Squeezing three times then two",
+		"Everything"
+               
+            ];
+            var randomIndex = Math.floor(Math.random() * reasons.length);
+            document.getElementById("loveReason").innerText = reasons[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>I love you babe!</h1>
+        <img src="BABE.jpg" alt="Us">
+        <button onclick="showLoveReason()">Why I Love You</button>
+        <p id="loveReason"></p>
+    </div>
+</body>
+</html>
